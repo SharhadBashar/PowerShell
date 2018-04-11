@@ -1,0 +1,90 @@
+<xml version="1.0" encoding="UTF-8">
+	<Product>Quality Management</Product>
+	<ProductCode>QMW</ProductCode>
+	<ProductVersion>4.5.4.1</ProductVersion>
+	<SharePointVersionForProduct>SP2013</SharePointVersionForProduct>
+	<!--SharePoint Features to check-->
+	<SharePointFeaturesArray>
+		<SPFeatureInfo SubSiteURLCode="" WSPName="" WSPFile="" WSPVersion="" Location="" ActiveOrInactive="" StringToLookFor="" ElementID="" />
+	</SharePointFeaturesArray>
+	<!--InfoPath Form Services settings to check in Central Admin-->
+	<InfoPathFormServicesArray>
+		<SettingInfo />
+	</InfoPathFormServicesArray>
+	<!--Info Path Forms to check if deployed in Form Templates library-->
+	<InfoPathFormsArray>
+		<FormInfo FormName="Document Activity Log" />
+		<FormInfo FormName="Training Quiz Form" />
+		<FormInfo FormName="Training Request Form" />
+		<FormInfo FormName="Training Session Form" />
+		<FormInfo FormName="CAPA Form" />
+		<FormInfo FormName="Incident Form" />
+		<FormInfo FormName="Change Control Form" />
+	</InfoPathFormsArray>
+	<!--Site Settings to check; SiteCollection is "WA" or "RC"-->
+	<SiteSettingsArray>
+		<SettingInfo SiteCollection="RC" SettingType="Content Organizer Settings" SettingName="Redirect Users to the Drop Off Library" RequiredValue="ENABLED" AllPropertiesValue="client_routerenforcerouting" AllPropertiesType="ENABLED_DISABLED" />
+		<SettingInfo SiteCollection="RC" SettingType="Content Organizer Settings" SettingName="Sending to Another Site" RequiredValue="DISABLED" AllPropertiesValue="_routerenablecrosssiterouting" AllPropertiesType="ENABLED_DISABLED" />
+		<SettingInfo SiteCollection="RC" SettingType="Content Organizer Settings" SettingName="Folder Partitioning" RequiredValue="DISABLED" AllPropertiesValue="_routerautofoldersettings" AllPropertiesType="ENABLED_DISABLED" />
+		<SettingInfo SiteCollection="RC" SettingType="Content Organizer Settings" SettingName="Duplicate Submissions" RequiredValue="Use SharePoint Versioning" AllPropertiesValue="_routerversioning" AllPropertiesType="String" />
+		<SettingInfo SiteCollection="RC" SettingType="Content Organizer Settings" SettingName="Preserving Context" RequiredValue="ENABLED" AllPropertiesValue="_routersaveauditlogs" AllPropertiesType="ENABLED_DISABLED" />
+		<SettingInfo SiteCollection="RC" SettingType="Content Organizer Settings" SettingName="E-mail rule managers when submissions do not match a rule" RequiredValue="DISABLED" AllPropertiesValue="_routeremailforproblems" AllPropertiesType="ENABLED_DISABLED" />
+		<SettingInfo SiteCollection="RC" SettingType="Content Organizer Settings" SettingName="E-mail rule managers when content has been left in the Drop Off Library" RequiredValue="DISABLED" AllPropertiesValue="_routeremailforstalecontent" AllPropertiesType="ENABLED_DISABLED" />
+		<SettingInfo SiteCollection="RC" SettingType="Record Declaration Settings" SettingName="Record Restrictions" RequiredValue="BlockDelete" AllPropertiesValue="ecm_siterecordrestrictions" AllPropertiesType="String" />
+		<SettingInfo SiteCollection="RC" SettingType="Record Declaration Settings" SettingName="Record Declaration Availability" RequiredValue="Not Available" AllPropertiesValue="ecm_siterecorddeclarationdefault" AllPropertiesType="AVAILABLE_NOTAVAILABLE" />
+		<SettingInfo SiteCollection="RC" SettingType="Record Declaration Settings" SettingName="Declaration of Records" RequiredValue="OnlyPolicy" AllPropertiesValue="ecm_siterecorddeclarationby" AllPropertiesType="String" />
+		<SettingInfo SiteCollection="RC" SettingType="Record Declaration Settings" SettingName="Undeclaration of Records" RequiredValue="OnlyPolicy" AllPropertiesValue="ecm_siterecordundeclarationby" AllPropertiesType="String" />
+	<SiteSettingsArray>
+	<!--Library Settings to check; SiteCollection is "WA" or "RC"-->
+	<LibrarySettingsArray>
+		<SettingInfo SiteCollection="RC" LibraryName="Controlled Documents" SettingName="Version History" RequiredValue="Major" />
+	<LibrarySettingsArray>
+	<!--Workflow Constants to check-->
+	<WorkflowConstantsArray>
+		<WorkflowConstantInfo Name="TMM Enable Certificate Signature" ConstantType="String" Scope="Site Collection" Sensitive="No" Description="" Value="NO" />
+	<WorkflowConstantsArray>
+	<!--Nintex Workflows to check-->
+	<NintexWorkflowArray>
+		<WorkflowInfo SubSiteURLCode="" WorkflowType="" WorkflowName="" LibraryName="" />
+	</NintexWorkflowArray>
+	<!--CoSign Settings to check-->
+	<CoSignSettingsArray>
+		<CoSignSettingInfo SubSiteURLCode="TMM" ListName="Training Certificates" ContentType="Training Certificate" >
+			<AttributeArray>
+				<AttributeInfo AtributeName="isDisplay_SignedBy" AttributeValue="true" />
+				<AttributeInfo AtributeName="isDisplay_SignatureTime" AttributeValue="true" />
+				<AttributeInfo AtributeName="isDisplay_GraphicSignature" AttributeValue="true" />
+				<AttributeInfo AtributeName="isDisplay_Reason" AttributeValue="true" />
+				<AttributeInfo AtributeName="isDisplay_Logo" AttributeValue="false" />
+				<AttributeInfo AtributeName="isDisplay_Initials" AttributeValue="false" />
+				<AttributeInfo AtributeName="FieldName" AttributeValue="Signature1" />
+				<AttributeInfo AtributeName="FieldDescr" AttributeValue="" />
+				<AttributeInfo AtributeName="isVisible" AttributeValue="true" />
+				<AttributeInfo AtributeName="PageNumber" AttributeValue="1" />
+				<AttributeInfo AtributeName="X" AttributeValue="275" />
+				<AttributeInfo AtributeName="Y" AttributeValue="365" />
+				<AttributeInfo AtributeName="Width" AttributeValue="300" />
+				<AttributeInfo AtributeName="Height" AttributeValue="100" />
+				<AttributeInfo AtributeName="DateFormat" AttributeValue="dd MMM yyyy" />
+				<AttributeInfo AtributeName="TimeFormat" AttributeValue="HH:mm:ss" />
+				<AttributeInfo AtributeName="isDisplay_GMT" AttributeValue="true" />
+				<AttributeInfo AtributeName="isDefaultSP" AttributeValue="true" />
+				<AttributeInfo AtributeName="isSigned" AttributeValue="false" />
+				<AttributeInfo AtributeName="FieldOrder" AttributeValue="1" />
+				<AttributeInfo AtributeName="SuggestedSignerName" AttributeValue="Signature1" />
+				<AttributeInfo AtributeName="is_AllowReason" AttributeValue="true" />
+				<AttributeInfo AtributeName="is_DisplayTitle" AttributeValue="false" />
+				<AttributeInfo AtributeName="isExistingField" AttributeValue="false" />
+				<AttributeInfo AtributeName="isGrSigLocationTop" AttributeValue="false" />
+			</AttributeArray>
+		</CoSignSettingInfo>
+	</CoSignSettingsArray>
+	<!--Secure Store Information to check-->
+	<SecureStoreSettingsArray>
+		<SettingInfo />
+	</SecureStoreSettingsArray>
+	<!--Help Center settings to check-->
+	<HelpCenterSettingsArray>
+		<SettingInfo />
+	</HelpCenterSettingsArray>
+</xml>
