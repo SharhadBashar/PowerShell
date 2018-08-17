@@ -1,0 +1,144 @@
+<xml version="1.0" encoding="UTF-8">
+	<Product>Quality Management</Product>
+	<ProductCode>QMW</ProductCode>
+	<IQCode>CMM</IQCode>
+	<ProductVersion>4.5.5.1</ProductVersion>
+	<SharePointVersionForProduct>SP2013</SharePointVersionForProduct>
+	<DCWFileName>MTM-QMW45-DCW-51.xlsm</DCWFileName>
+	<!--Other Prerequisites-->
+	<OtherPrerequisiteArray>
+		<PrerequisiteInfo Name="Target Application Administrator user name" Value="_clientCode_ADM_TestOrPROD_" />
+	</OtherPrerequisiteArray>
+	<!--SharePoint Features to check-->
+	<SharePointFeaturesArray>
+	</SharePointFeaturesArray>
+	<!--SharePoint Features to check-->
+	<SharePointFeaturesArray>
+	</SharePointFeaturesArray>
+	<!--InfoPath Form Services settings to check in Central Admin-->
+	<InfoPathFormServicesArray>
+	</InfoPathFormServicesArray>
+	<!--Info Path Forms to check if deployed in Form Templates library-->
+	<InfoPathFormsArray>
+		<FormInfo SubSiteURLCode="CMM" FormName="CAPA Form" />
+		<FormInfo SubSiteURLCode="CMM" FormName="Incident Form" />
+	</InfoPathFormsArray>
+	<SiteSettingsArray>
+		<SettingInfo SiteCollection="RC" SettingType="Content Organizer Rule" SettingName="Incident Record" RequiredValue="_NOT_APPLICABLE_" AllPropertiesValue="_NOT_APPLICABLE_" AllPropertiesType="_NOT_APPLICABLE_"> 
+			<RoutingRule RuleName="Move to Incident Records" SettingName="Submission Content Type" RequiredValue="Incident Record"/>
+			<RoutingRule RuleName="Move to Incident Records" SettingName="Rule Name" RequiredValue="Move to Incident Records" />
+			<RoutingRule RuleName="Move to Incident Records" SettingName="Active" RequiredValue="Yes"/>
+			<RoutingRule RuleName="Move to Incident Records" SettingName="Target Library" RequiredValue="Incident Records" />
+		</SettingInfo>
+		<SettingInfo SiteCollection="RC" SettingType="Content Organizer Rule" SettingName="CAPA Record" RequiredValue="_NOT_APPLICABLE_" AllPropertiesValue="_NOT_APPLICABLE_" AllPropertiesType="_NOT_APPLICABLE_"> 
+			<RoutingRule RuleName="Move to CAPA Records" SettingName="Submission Content Type" RequiredValue="CAPA Record"/>
+			<RoutingRule RuleName="Move to CAPA Records" SettingName="Rule Name" RequiredValue="Move to CAPA Records" />
+			<RoutingRule RuleName="Move to CAPA Records" SettingName="Active" RequiredValue="Yes"/>
+			<RoutingRule RuleName="Move to CAPA Records" SettingName="Target Library" RequiredValue="CAPA Records" />
+		</SettingInfo> 		
+	</SiteSettingsArray>
+	<!--Library Settings to check; SiteCollection is "WA" or "RC" There are no library setting in the capa script-->
+	<LibrarySettingsArray>
+		<SettingInfo SiteCollection="RC" SubSiteURLCode="_NOT_APPLICABLE_" VerificationStep="N/A" LibraryName="Incident Records" SettingName="Version Setting" RequiredValue="N/A">
+			<VersionHistory VerificationStep="Create major or minor versions?" SettingName="Create major versions" RequiredValue="Major" />
+		</SettingInfo>
+		<SettingInfo SiteCollection="RC" SubSiteURLCode="_NOT_APPLICABLE_" VerificationStep="N/A" LibraryName="Incident Records" SettingName="Version Setting" RequiredValue="N/A">
+			<VersionHistory VerificationStep="Optionally limit the number of versions to retain?" SettingName="Keep the following number of major versions" RequiredValue="NO" />
+		</SettingInfo>
+		<SettingInfo SiteCollection="RC" SubSiteURLCode="_NOT_APPLICABLE_" VerificationStep="N/A" LibraryName="Incident Records" SettingName="Library Advanced Setting" RequiredValue="N/A">
+			<Advancedsetting VerificationStep="Allow management of content types?" SettingName="Allow management of content types" RequiredValue="YES" />
+		</SettingInfo>
+		<SettingInfo SiteCollection="RC" SubSiteURLCode="_NOT_APPLICABLE_" VerificationStep="N/A" LibraryName="Incident Records" SettingName="Library Advanced Setting" RequiredValue="N/A">
+			<Advancedsetting VerificationStep="Opening Documents in the Browser: " SettingName="Use the server default" RequiredValue="Open in the client application" />
+		</SettingInfo>
+		<SettingInfo SiteCollection="RC" SubSiteURLCode="_NOT_APPLICABLE_" VerificationStep="N/A" LibraryName="CAPA Records" SettingName="Version Setting" RequiredValue="N/A">
+			<VersionHistory VerificationStep="Create major or minor versions?" SettingName="Create major versions" RequiredValue="Major" />
+		</SettingInfo>
+		<SettingInfo SiteCollection="RC" SubSiteURLCode="_NOT_APPLICABLE_" VerificationStep="N/A" LibraryName="CAPA Records" SettingName="Version Setting" RequiredValue="N/A">
+			<VersionHistory VerificationStep="Optionally limit the number of versions to retain?" SettingName="Keep the following number of major versions" RequiredValue="NO" />
+		</SettingInfo>
+		<SettingInfo SiteCollection="RC" SubSiteURLCode="_NOT_APPLICABLE_" VerificationStep="N/A" LibraryName="CAPA Records" SettingName="Library Advanced Setting" RequiredValue="N/A">
+			<Advancedsetting VerificationStep="Allow management of content types?" SettingName="Allow management of content types" RequiredValue="YES" />
+		</SettingInfo>
+		<SettingInfo SiteCollection="RC" SubSiteURLCode="_NOT_APPLICABLE_" VerificationStep="N/A" LibraryName="CAPA Records" SettingName="Library Advanced Setting" RequiredValue="N/A">
+			<Advancedsetting VerificationStep="Opening Documents in the Browser: " SettingName="Use the server default" RequiredValue="Open in the client application" />
+		</SettingInfo>
+	</LibrarySettingsArray>
+	<!--Workflow Constants to check-->
+	<WorkflowConstantsArray>
+		<WorkflowConstantInfo Name="CMM Version" ConstantType="String" Scope="Site Collection" Sensitive="No" Description="" Value="4.5.5" />
+	</WorkflowConstantsArray>
+	<!--Nintex Workflows to check-->
+	<NintexWorkflowArray>
+		<WorkflowInfo SubSiteURLCode="CMM" WorkflowType="List" WorkflowName="IMP - Review and Approval" LibraryName="Incident Forms" />
+		<WorkflowInfo SubSiteURLCode="CMM" WorkflowType="List" WorkflowName="IMP - Record Creation and Filing" LibraryName="Incident Forms" />
+		<WorkflowInfo SubSiteURLCode="CMM" WorkflowType="List" WorkflowName="IMP - PDF Generation" LibraryName="Incident Forms" />
+		<WorkflowInfo SubSiteURLCode="CMM" WorkflowType="List" WorkflowName="AMP - Action Management" LibraryName="CAPA Forms" />
+		<WorkflowInfo SubSiteURLCode="CMM" WorkflowType="List" WorkflowName="AMP - PDF Generation" LibraryName="CAPA Forms" />
+		<WorkflowInfo SubSiteURLCode="CMM" WorkflowType="List" WorkflowName="AMP - Record Creation and Filing" LibraryName="CAPA Forms" />
+		<WorkflowInfo SubSiteURLCode="CMM" WorkflowType="List" WorkflowName="AMP - Action Execution" LibraryName="CAPA Actions" />
+	</NintexWorkflowArray>
+	<!--Data Connections-->
+	<DataConnectionsArray>
+	</DataConnectionsArray>
+	<!--CoSign Features to check-->
+	<CoSignFeatures>
+	</CoSignFeatures>
+	<!--Content Type Array-->
+	<ContentTypeArray>
+		<ContentTypeInfo SubSiteURLCode="CMM" List="CAPA Forms" ContentTypeName="CAPA Form" />
+		<ContentTypeInfo SubSiteURLCode="CMM" List="Incident Forms" ContentTypeName="Incident Form" />
+	</ContentTypeArray>
+	<!--Attachment Seperator Array-->
+	<AttachmentSeperator>
+		<File FileName="attachment_separator.pdf" SubSiteURLCode="CMM" ListName="Site Assets" />
+	</AttachmentSeperator>
+	<!--CoSign Settings to check-->
+	<CoSignSettingsArray>
+		<List SubSiteURLCode="CMM" ListName="Incident Forms" ContentType="Incident Record" SignatureProfile="No" >
+			<AttributeArray>
+				<AttributeInfo AttributeLevel="Library Settings" AtributeName="Enabled" AttributeDefinition="Enable CoSign digital signatures" AttributeValue="true" />
+				<AttributeInfo AttributeLevel="Library Settings" AtributeName="IsAutoVerEnabled" AttributeDefinition="Enable automatic verification of CoSign digital signatures" AttributeValue="false" />
+				<AttributeInfo AttributeLevel="Library Settings" AtributeName="DisplayLoggedinUser" AttributeDefinition="Display logged-in user name when signing" AttributeValue="false" />
+				<AttributeInfo AttributeLevel="Library Settings" AtributeName="EnforcePredefinedReasons" AttributeDefinition="Enforce predefined reasons" AttributeValue="true" />
+				<AttributeInfo AttributeLevel="Library Settings" AtributeName="PredefinedReasons" AttributeDefinition="Predefined reasons" AttributeValue="I approve this document" />
+				<AttributeInfo AttributeLevel="Content Type Settings" AtributeName="IsAddSigProfsEnabled" AttributeDefinition="Enable signing of user-generated signature fields" AttributeValue="false" />
+				<AttributeInfo AttributeLevel="Content Type Settings" AtributeName="IsNewSigFieldEnabled" AttributeDefinition="Enable users to create and sign new signature fields" AttributeValue="true" />
+				<AttributeInfo AttributeLevel="Content Type Settings" AtributeName="IsEditSigFieldSetEnabled" AttributeDefinition="Enable users to change new signature field settings" AttributeValue="false" />
+				<AttributeInfo AttributeLevel="Content Type Check Settings" AtributeName="isDisplay_SignedBy" AttributeDefinition="Signed by" AttributeValue="true" />
+				<AttributeInfo AttributeLevel="Content Type Check Settings" AtributeName="isDisplay_Reason" AttributeDefinition="Reason" AttributeValue="true" />
+				<AttributeInfo AttributeLevel="Content Type Check Settings" AtributeName="isDisplay_SignatureTime" AttributeDefinition="Date/Time" AttributeValue="true" />
+				<AttributeInfo AttributeLevel="Content Type Check Settings" AtributeName="isDisplay_GraphicSignature" AttributeDefinition="Graphical Signature" AttributeValue="true" />
+				<AttributeInfo AttributeLevel="Content Type Check Settings" AtributeName="DateFormat" AttributeDefinition="Date Format" AttributeValue="dd MMM yyyy" />
+				<AttributeInfo AttributeLevel="Content Type Check Settings" AtributeName="TimeFormat" AttributeDefinition="Time Format" AttributeValue="HH:mm:ss" />
+				<AttributeInfo AttributeLevel="Content Type Check Settings" AtributeName="isDisplay_GMT" AttributeDefinition="Display GMT Offset" AttributeValue="true" />			
+			</AttributeArray>
+		</List>
+		<List SubSiteURLCode="CMM" ListName="CAPA Forms" ContentType="CAPA Record" SignatureProfile="No" >
+			<AttributeArray>
+				<AttributeInfo AttributeLevel="Library Settings" AtributeName="Enabled" AttributeDefinition="Enable CoSign digital signatures" AttributeValue="true" />
+				<AttributeInfo AttributeLevel="Library Settings" AtributeName="IsAutoVerEnabled" AttributeDefinition="Enable automatic verification of CoSign digital signatures" AttributeValue="false" />
+				<AttributeInfo AttributeLevel="Library Settings" AtributeName="DisplayLoggedinUser" AttributeDefinition="Display logged-in user name when signing" AttributeValue="false" />
+				<AttributeInfo AttributeLevel="Library Settings" AtributeName="EnforcePredefinedReasons" AttributeDefinition="Enforce predefined reasons" AttributeValue="true" />
+				<AttributeInfo AttributeLevel="Library Settings" AtributeName="PredefinedReasons" AttributeDefinition="Predefined reasons" AttributeValue="I approve this document" />
+				<AttributeInfo AttributeLevel="Content Type Settings" AtributeName="IsAddSigProfsEnabled" AttributeDefinition="Enable signing of user-generated signature fields" AttributeValue="false" />
+				<AttributeInfo AttributeLevel="Content Type Settings" AtributeName="IsNewSigFieldEnabled" AttributeDefinition="Enable users to create and sign new signature fields" AttributeValue="true" />
+				<AttributeInfo AttributeLevel="Content Type Settings" AtributeName="IsEditSigFieldSetEnabled" AttributeDefinition="Enable users to change new signature field settings" AttributeValue="false" />
+				<AttributeInfo AttributeLevel="Content Type Check Settings" AtributeName="isDisplay_SignedBy" AttributeDefinition="Signed by" AttributeValue="true" />
+				<AttributeInfo AttributeLevel="Content Type Check Settings" AtributeName="isDisplay_Reason" AttributeDefinition="Reason" AttributeValue="true" />
+				<AttributeInfo AttributeLevel="Content Type Check Settings" AtributeName="isDisplay_SignatureTime" AttributeDefinition="Date/Time" AttributeValue="true" />
+				<AttributeInfo AttributeLevel="Content Type Check Settings" AtributeName="isDisplay_GraphicSignature" AttributeDefinition="Graphical Signature" AttributeValue="true" />
+				<AttributeInfo AttributeLevel="Content Type Check Settings" AtributeName="DateFormat" AttributeDefinition="Date Format" AttributeValue="dd MMM yyyy" />
+				<AttributeInfo AttributeLevel="Content Type Check Settings" AtributeName="TimeFormat" AttributeDefinition="Time Format" AttributeValue="HH:mm:ss" />
+				<AttributeInfo AttributeLevel="Content Type Check Settings" AtributeName="isDisplay_GMT" AttributeDefinition="Display GMT Offset" AttributeValue="true" />			
+			</AttributeArray>
+		</List>
+	</CoSignSettingsArray>
+	<!--Secure Store Information to check-->
+	<SecureStoreSettingsArray>
+	</SecureStoreSettingsArray>
+	<!--Help Center settings to check-->
+	<HelpCenterSettingsArray>
+		<SettingInfo SubSiteURLCode="CMM" ListName="PL - CAPA Quicklinks" SettingType="Link" SettingValue="CAPA Connect HelpCenter"/>
+	</HelpCenterSettingsArray>
+</xml>

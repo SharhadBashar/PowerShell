@@ -1,0 +1,171 @@
+<xml version="1.0" encoding="UTF-8">
+	<Product>Quality Management</Product>
+	<ProductCode>QMW</ProductCode>
+	<IQCode>CDM</IQCode>
+	<ProductVersion>4.5.5.1</ProductVersion>
+	<SharePointVersionForProduct>SP2013</SharePointVersionForProduct>
+	<DCWFileName>MTM-QMW45-DCW-51.xlsm</DCWFileName>
+	<!--Other Prerequisites-->
+	<OtherPrerequisiteArray>
+		<PrerequisiteInfo Name="Target Application Administrator user name" Value="_clientCode_ADM_TestOrPROD_" />
+	</OtherPrerequisiteArray>
+	<!--SharePoint Features to check-->
+	<SharePointFeaturesArray>
+		<SPFeatureInfo SiteCollection="WA" SubSiteURLCode="CDM" FeatureName="Montrium CDM Components" WSPFile="" Scope="Web" Location="" ActiveOrInactive="Active" StringToLookFor="Provides the functionality for generating Controlled Document Copies, Document Access Restriction, and binds ribbon actions to CDM libraries [v1.1.2]" ElementID="" />
+		<SPFeatureInfo SiteCollection="WA" SubSiteURLCode="CDM" FeatureName="Nintex Workflow 2013" WSPFile="" Scope="Web" Location="" ActiveOrInactive="Active" StringToLookFor="" ElementID="" />
+		<SPFeatureInfo SiteCollection="WA" SubSiteURLCode="CDM" FeatureName="SharePoint Server Publishing" WSPFile="" Scope="Web" Location="" ActiveOrInactive="Active" StringToLookFor="" ElementID="" />
+	</SharePointFeaturesArray>
+	<!--SharePoint Features to check-->
+	<SharePointSolutionsArray>
+	</SharePointSolutionsArray>
+	<!--InfoPath Form Services settings to check in Central Admin-->
+	<InfoPathFormServicesArray>
+	</InfoPathFormServicesArray>
+	<!--Info Path Forms to check if deployed in Form Templates library-->
+	<InfoPathFormsArray>
+		<FormInfo SubSiteURLCode="CDM" FormName="Document Activity Log" />
+	</InfoPathFormsArray>
+	<!--Site Settings to check; SiteCollection is "WA" or "RC"-->
+	<SiteSettingsArray>
+		<SettingInfo SiteCollection="RC" SettingType="Content Organizer Rule" SettingName="Standard Operating Procedure" RequiredValue="_NOT_APPLICABLE_" AllPropertiesValue="_NOT_APPLICABLE_" AllPropertiesType="_NOT_APPLICABLE_"> 
+			<RoutingRule RuleName="Move to Controlled Documents" SettingName="Submission Content Type" RequiredValue="Standard Operating Procedure"/>
+			<RoutingRule RuleName="Move to Controlled Documents" SettingName="Rule Name" RequiredValue="Move to Controlled Documents" />
+			<RoutingRule RuleName="Move to Controlled Documents" SettingName="Active" RequiredValue="Yes"/>
+			<RoutingRule RuleName="Move to Controlled Documents" SettingName="Target Library" RequiredValue="Controlled Documents" />
+		</SettingInfo>
+		<SettingInfo SiteCollection="RC" SettingType="Content Organizer Rule" SettingName="Policy" RequiredValue="_NOT_APPLICABLE_" AllPropertiesValue="_NOT_APPLICABLE_" AllPropertiesType="_NOT_APPLICABLE_"> 
+			<RoutingRule RuleName="Move to Controlled Documents" SettingName="Submission Content Type" RequiredValue="Policy"/>
+			<RoutingRule RuleName="Move to Controlled Documents" SettingName="Rule Name" RequiredValue="Move to Controlled Documents" />
+			<RoutingRule RuleName="Move to Controlled Documents" SettingName="Active" RequiredValue="Yes"/>
+			<RoutingRule RuleName="Move to Controlled Documents" SettingName="Target Library" RequiredValue="Controlled Documents" />
+		</SettingInfo>
+		<SettingInfo SiteCollection="RC" SettingType="Content Organizer Rule" SettingName="Work Instruction" RequiredValue="_NOT_APPLICABLE_" AllPropertiesValue="_NOT_APPLICABLE_" AllPropertiesType="_NOT_APPLICABLE_"> 
+			<RoutingRule RuleName="Move to Controlled Documents" SettingName="Submission Content Type" RequiredValue="Work Instruction"/>
+			<RoutingRule RuleName="Move to Controlled Documents" SettingName="Rule Name" RequiredValue="Move to Controlled Documents" />
+			<RoutingRule RuleName="Move to Controlled Documents" SettingName="Active" RequiredValue="Yes"/>
+			<RoutingRule RuleName="Move to Controlled Documents" SettingName="Target Library" RequiredValue="Controlled Documents" />
+		</SettingInfo>
+		<SettingInfo SiteCollection="RC" SettingType="Content Organizer Rule" SettingName="Form-Word" RequiredValue="_NOT_APPLICABLE_" AllPropertiesValue="_NOT_APPLICABLE_" AllPropertiesType="_NOT_APPLICABLE_"> 
+			<RoutingRule RuleName="Move to Controlled Documents" SettingName="Submission Content Type" RequiredValue="Form-Word"/>
+			<RoutingRule RuleName="Move to Controlled Documents" SettingName="Rule Name" RequiredValue="Move to Controlled Documents" />
+			<RoutingRule RuleName="Move to Controlled Documents" SettingName="Active" RequiredValue="Yes"/>
+			<RoutingRule RuleName="Move to Controlled Documents" SettingName="Target Library" RequiredValue="Controlled Documents" />
+		</SettingInfo>
+		<SettingInfo SiteCollection="RC" SettingType="Content Organizer Rule" SettingName="Job Description" RequiredValue="_NOT_APPLICABLE_" AllPropertiesValue="_NOT_APPLICABLE_" AllPropertiesType="_NOT_APPLICABLE_"> 
+			<RoutingRule RuleName="Move to Controlled Documents" SettingName="Submission Content Type" RequiredValue="Job Description"/>
+			<RoutingRule RuleName="Move to Controlled Documents" SettingName="Rule Name" RequiredValue="Move to Controlled Documents" />
+			<RoutingRule RuleName="Move to Controlled Documents" SettingName="Active" RequiredValue="Yes"/>
+			<RoutingRule RuleName="Move to Controlled Documents" SettingName="Target Library" RequiredValue="Controlled Documents" />
+		</SettingInfo>
+		<SettingInfo SiteCollection="RC" SettingType="Content Organizer Rule" SettingName="Controlled Document" RequiredValue="_NOT_APPLICABLE_" AllPropertiesValue="_NOT_APPLICABLE_" AllPropertiesType="_NOT_APPLICABLE_"> 
+			<RoutingRule RuleName="Move to Controlled Documents" SettingName="Submission Content Type" RequiredValue="Controlled Document"/>
+			<RoutingRule RuleName="Move to Controlled Documents" SettingName="Rule Name" RequiredValue="Move to Controlled Documents" />
+			<RoutingRule RuleName="Move to Controlled Documents" SettingName="Active" RequiredValue="Yes"/>
+			<RoutingRule RuleName="Move to Controlled Documents" SettingName="Target Library" RequiredValue="Controlled Documents" />
+		</SettingInfo>
+		<SettingInfo SiteCollection="RC" SettingType="Content Organizer Rule" SettingName="DCC Record" RequiredValue="_NOT_APPLICABLE_" AllPropertiesValue="_NOT_APPLICABLE_" AllPropertiesType="_NOT_APPLICABLE_"> 
+			<RoutingRule RuleName="Move to Document Activity Records" SettingName="Submission Content Type" RequiredValue="DCC Record"/>
+			<RoutingRule RuleName="Move to Document Activity Records" SettingName="Rule Name" RequiredValue="Move to Document Activity Records" />
+			<RoutingRule RuleName="Move to Document Activity Records" SettingName="Active" RequiredValue="Yes"/>
+			<RoutingRule RuleName="Move to Document Activity Records" SettingName="Target Library" RequiredValue="Document Activity Records" />
+		</SettingInfo>
+		<SettingInfo SiteCollection="RC" SettingType="Content Organizer Rule" SettingName="Periodic Review Record" RequiredValue="_NOT_APPLICABLE_" AllPropertiesValue="_NOT_APPLICABLE_" AllPropertiesType="_NOT_APPLICABLE_"> 
+			<RoutingRule RuleName="Move to Document Activity Records" SettingName="Submission Content Type" RequiredValue="Periodic Review Record"/>
+			<RoutingRule RuleName="Move to Document Activity Records" SettingName="Rule Name" RequiredValue="Move to Document Activity Records" />
+			<RoutingRule RuleName="Move to Document Activity Records" SettingName="Active" RequiredValue="Yes"/>
+			<RoutingRule RuleName="Move to Document Activity Records" SettingName="Target Library" RequiredValue="Document Activity Records" />
+		</SettingInfo>
+	</SiteSettingsArray>
+	<!--Library Settings to check; SiteCollection is "WA" or "RC"-->
+	<LibrarySettingsArray>
+		<SettingInfo SiteCollection="WA" SubSiteURLCode="CDM" VerificationStep="Document Activity Log associated to the library?" LibraryName="Document Activity Logs" SettingName="Content type" RequiredValue="Document Activity Log" />
+		<SettingInfo SiteCollection="RC" VerificationStep="N/A" LibraryName="Controlled Documents" SettingName="Version Setting" RequiredValue="N/A">
+			<VersionHistory VerificationStep="Create major or minor versions?" SettingName="Create major versions" RequiredValue="Major" />
+		</SettingInfo>
+		<SettingInfo SiteCollection="RC" VerificationStep="N/A" LibraryName="Controlled Documents" SettingName="Version Setting" RequiredValue="N/A">
+			<VersionHistory VerificationStep="Optionally limit the number of versions to retain?" SettingName="Keep the following number of major versions" RequiredValue="NO" />
+		</SettingInfo>
+		<SettingInfo SiteCollection="RC" VerificationStep="N/A" LibraryName="Controlled Documents" SettingName="Library Advanced Setting" RequiredValue="N/A">
+			<Advancedsetting VerificationStep="Allow management of content types?" SettingName="Allow management of content types" RequiredValue="YES" />
+		</SettingInfo>
+		<SettingInfo SiteCollection="RC" VerificationStep="N/A" LibraryName="Controlled Documents" SettingName="Library Advanced Setting" RequiredValue="N/A">
+			<Advancedsetting VerificationStep="Opening Documents in the Browser: " SettingName="Use the server default" RequiredValue="Open in the client application" />
+		</SettingInfo>
+		<SettingInfo SiteCollection="RC" VerificationStep="N/A" LibraryName="Document Activity Records" SettingName="Version Setting" RequiredValue="N/A">
+			<VersionHistory VerificationStep="Create major or minor versions?" SettingName="Create major versions" RequiredValue="Major" />
+		</SettingInfo>
+		<SettingInfo SiteCollection="RC" VerificationStep="N/A" LibraryName="Document Activity Records" SettingName="Version Setting" RequiredValue="N/A">
+			<VersionHistory VerificationStep="Optionally limit the number of versions to retain?" SettingName="Keep the following number of major versions" RequiredValue="NO" />
+		</SettingInfo>
+		<SettingInfo SiteCollection="RC" VerificationStep="N/A" LibraryName="Document Activity Records" SettingName="Library Advanced Setting" RequiredValue="N/A">
+			<Advancedsetting VerificationStep="Allow management of content types?" SettingName="Allow management of content types" RequiredValue="YES" />
+		</SettingInfo>
+		<SettingInfo SiteCollection="RC" VerificationStep="N/A" LibraryName="Document Activity Records" SettingName="Library Advanced Setting" RequiredValue="N/A">
+			<Advancedsetting VerificationStep="Opening Documents in the Browser: " SettingName="Use the server default" RequiredValue="Open in the client application" />
+		</SettingInfo>
+	</LibrarySettingsArray>
+	<!--Workflow Constants to check-->
+	<WorkflowConstantsArray>
+		<WorkflowConstantInfo Name="CDM Version" ConstantType="String" Scope="Site Collection" Sensitive="No" Description="" Value="4.5.5" />
+	</WorkflowConstantsArray>
+	<!--Nintex Workflows to check-->
+	<NintexWorkflowArray>
+		<WorkflowInfo SubSiteURLCode="CDM" WorkflowType="Site" WorkflowName="Periodic Review Date Monitor" LibraryName="CDM" />
+		<WorkflowInfo SubSiteURLCode="CDM" WorkflowType="Site" WorkflowName="Search for Controlled Copies" LibraryName="CDM" />
+		<WorkflowInfo SubSiteURLCode="CDM" WorkflowType="List" WorkflowName="Controlled Document Review" LibraryName="Draft Controlled Documents" />
+		<WorkflowInfo SubSiteURLCode="CDM" WorkflowType="List" WorkflowName="Controlled Document Approval" LibraryName="Draft Controlled Documents" />
+		<WorkflowInfo SubSiteURLCode="CDM" WorkflowType="List" WorkflowName="PDF Conversion" LibraryName="Draft Controlled Documents" />
+		<WorkflowInfo SubSiteURLCode="CDM" WorkflowType="List" WorkflowName="Register Controlled Document" LibraryName="Draft Controlled Documents" />
+		<WorkflowInfo SubSiteURLCode="CDM" WorkflowType="List" WorkflowName="Periodic Review Initiation" LibraryName="Effective Controlled Documents" />
+		<WorkflowInfo SubSiteURLCode="CDM" WorkflowType="List" WorkflowName="DCC Review and Approval" LibraryName="Document Activity Logs" />
+		<WorkflowInfo SubSiteURLCode="CDM" WorkflowType="List" WorkflowName="Periodic Review" LibraryName="Document Activity Logs" />
+		<WorkflowInfo SubSiteURLCode="CDM" WorkflowType="List" WorkflowName="DCC Training and Closeout" LibraryName="Document Activity Logs" />
+		<WorkflowInfo SubSiteURLCode="CDM" WorkflowType="List" WorkflowName="DCC Promotion" LibraryName="Document Activity Logs" />
+		<WorkflowInfo SubSiteURLCode="CDM" WorkflowType="List" WorkflowName="DCC Obsolescence" LibraryName="Document Activity Logs" />
+		<WorkflowInfo SubSiteURLCode="CDM" WorkflowType="List" WorkflowName="DCC Cancellation" LibraryName="Document Activity Logs" />
+		<WorkflowInfo SubSiteURLCode="CDM" WorkflowType="List" WorkflowName="Controlled Copy Manager" LibraryName="Controlled Copy Log" />
+	</NintexWorkflowArray>
+	<!--Data Connections-->
+	<DataConnectionsArray>
+	</DataConnectionsArray>
+	<!--CoSign Features to check-->
+	<CoSignFeatures>
+	</CoSignFeatures>
+	<!--DAL Content Type to check-->
+	<ContentTypeArray>
+		<ContentTypeInfo SubSiteURLCode="CDM" List="Document Activity Logs" ContentTypeName="Document Activity Log"/>
+	</ContentTypeArray>
+	<!--Attachment Seperator Array-->
+	<AttachmentSeperator>
+	</AttachmentSeperator>
+	<!--CoSign Settings to check-->
+	<CoSignSettingsArray>
+		<List SubSiteURLCode="CDM" ListName="Draft Controlled Documents" ContentType="Standard Operating Procedure, Policy, Work Instruction, Form-Word, Job Description, Controlled Document" SignatureProfile="No" >
+			<AttributeArray>
+				<AttributeInfo AttributeLevel="Library Settings" AtributeName="Enabled" AttributeDefinition="Enable CoSign digital signatures" AttributeValue="true" />
+				<AttributeInfo AttributeLevel="Library Settings" AtributeName="IsAutoVerEnabled" AttributeDefinition="Enable automatic verification of CoSign digital signatures" AttributeValue="false" />
+				<AttributeInfo AttributeLevel="Library Settings" AtributeName="DisplayLoggedinUser" AttributeDefinition="Display logged-in user name when signing" AttributeValue="false" />
+				<AttributeInfo AttributeLevel="Library Settings" AtributeName="EnforcePredefinedReasons" AttributeDefinition="Enforce predefined reasons" AttributeValue="true" />
+				<AttributeInfo AttributeLevel="Library Settings" AtributeName="PredefinedReasons" AttributeDefinition="Predefined reasons" AttributeValue="I am the author of this document, I reviewed this document, I approve this document, I attest to the accuracy and integrity of this document, I agree to the terms defined within this document, I acknowledge the presence of this document and its content" />
+				<AttributeInfo AttributeLevel="Content Type Settings" AtributeName="IsAddSigProfsEnabled" AttributeDefinition="Enable signing of user-generated signature fields" AttributeValue="false" />
+				<AttributeInfo AttributeLevel="Content Type Settings" AtributeName="IsNewSigFieldEnabled" AttributeDefinition="Enable users to create and sign new signature fields" AttributeValue="true" />
+				<AttributeInfo AttributeLevel="Content Type Settings" AtributeName="IsEditSigFieldSetEnabled" AttributeDefinition="Enable users to change new signature field settings" AttributeValue="false" />
+				<AttributeInfo AttributeLevel="Content Type Check Settings" AtributeName="isDisplay_SignedBy" AttributeDefinition="Signed by" AttributeValue="true" />
+				<AttributeInfo AttributeLevel="Content Type Check Settings" AtributeName="isDisplay_Reason" AttributeDefinition="Reason" AttributeValue="true" />
+				<AttributeInfo AttributeLevel="Content Type Check Settings" AtributeName="isDisplay_SignatureTime" AttributeDefinition="Date/Time" AttributeValue="true" />
+				<AttributeInfo AttributeLevel="Content Type Check Settings" AtributeName="isDisplay_GraphicSignature" AttributeDefinition="Graphical Signature" AttributeValue="true" />
+				<AttributeInfo AttributeLevel="Content Type Check Settings" AtributeName="DateFormat" AttributeDefinition="Date Format" AttributeValue="dd MMM yyyy" />
+				<AttributeInfo AttributeLevel="Content Type Check Settings" AtributeName="TimeFormat" AttributeDefinition="Time Format" AttributeValue="HH:mm:ss" />
+				<AttributeInfo AttributeLevel="Content Type Check Settings" AtributeName="isDisplay_GMT" AttributeDefinition="Display GMT Offset" AttributeValue="true" />			
+			</AttributeArray>
+		</List>
+	</CoSignSettingsArray>
+	<!--Secure Store Information to check-->
+	<SecureStoreSettingsArray>
+	</SecureStoreSettingsArray>
+	<!--Help Center settings to check-->
+	<HelpCenterSettingsArray>
+		<SettingInfo SubSiteURLCode="CDM" ListName="PL - SOP Quicklinks" SettingType="Link" SettingValue="SOP Connect HelpCenter"/>
+		<SettingInfo SubSiteURLCode="CDMHelpCenter" ListName="PL - CDM User Guides" SettingType="Link" SettingValue="_ALL_"/>
+	</HelpCenterSettingsArray>
+</xml>

@@ -1,0 +1,156 @@
+<xml version="1.0" encoding="UTF-8">
+	<Product>Quality Management</Product>
+	<ProductCode>QMW</ProductCode>
+	<IQCode>QMW</IQCode>
+	<ProductVersion>4.5.5.1</ProductVersion>
+	<SharePointVersionForProduct>SP2013</SharePointVersionForProduct>
+	<DCWFileName>MTM-QMW45-DCW-51.xlsm</DCWFileName>
+	<!--Other Prerequisites-->
+	<OtherPrerequisiteArray>
+		<PrerequisiteInfo Name="Target Application Administrator user name" Value="_clientCode_ADM_TestOrPROD_" />
+	</OtherPrerequisiteArray>
+	<!--SharePoint Features to check-->
+	<SharePointFeaturesArray>
+		<SPFeatureInfo SiteCollection="WA" SubSiteURLCode="_NOT_APPLICABLE_" FeatureName="ArtfulBits Cascaded Lookup Column" WSPFile="" Scope="Site" Location="" ActiveOrInactive="Active" StringToLookFor="" ElementID="" />
+		<SPFeatureInfo SiteCollection="WA" SubSiteURLCode="_NOT_APPLICABLE_" FeatureName="CoSign Connector for SharePoint (v7.1)" WSPFile="" Scope="Site" Location="" ActiveOrInactive="Active" StringToLookFor="" ElementID="" />
+		<SPFeatureInfo SiteCollection="WA" SubSiteURLCode="_NOT_APPLICABLE_" FeatureName="CoSign Connector for Workflows (v7.1)" WSPFile="" Scope="Site" Location="" ActiveOrInactive="Active" StringToLookFor="" ElementID="" />
+		<SPFeatureInfo SiteCollection="WA" SubSiteURLCode="_NOT_APPLICABLE_" FeatureName="Nintex Workflow 2013" WSPFile="" Scope="Site" Location="" ActiveOrInactive="Active" StringToLookFor="" ElementID="" />
+		<SPFeatureInfo SiteCollection="WA" SubSiteURLCode="_NOT_APPLICABLE_" FeatureName="Nintex Workflow 2013 Web Parts" WSPFile="" Scope="Site" Location="" ActiveOrInactive="Active" StringToLookFor="" ElementID="" />
+		<SPFeatureInfo SiteCollection="WA" SubSiteURLCode="_NOT_APPLICABLE_" FeatureName="SharePoint Server Publishing Infrastructure" WSPFile="" Scope="Site" Location="" ActiveOrInactive="Active" StringToLookFor="" ElementID="" />
+		<SPFeatureInfo SiteCollection="WA" SubSiteURLCode="_NOT_APPLICABLE_" FeatureName="SharePoint Server Enterprise Site Collection features" WSPFile="" Scope="Site" Location="" ActiveOrInactive="Active" StringToLookFor="" ElementID="" />
+		<SPFeatureInfo SiteCollection="WA" SubSiteURLCode="_NOT_APPLICABLE_" FeatureName="Montrium Core Components" WSPFile="" Scope="Site" Location="" ActiveOrInactive="Active" StringToLookFor="" ElementID="" />
+		<SPFeatureInfo SiteCollection="WA" SubSiteURLCode="_NOT_APPLICABLE_" FeatureName="Montrium Library Templates" WSPFile="" Scope="Site" Location="" ActiveOrInactive="Active" StringToLookFor="" ElementID="" />
+		<SPFeatureInfo SiteCollection="WA" SubSiteURLCode="_NOT_APPLICABLE_" FeatureName="Montrium UDI Generator" WSPFile="" Scope="Site" Location="" ActiveOrInactive="Active" StringToLookFor="" ElementID="" />
+		<SPFeatureInfo SiteCollection="WA" SubSiteURLCode="_NOT_APPLICABLE_" FeatureName="Montrium Classification" WSPFile="" Scope="Site" Location="" ActiveOrInactive="Active" StringToLookFor="" ElementID="" />
+		<SPFeatureInfo SiteCollection="WA" SubSiteURLCode="_NOT_APPLICABLE_" FeatureName="Montrium Task Access Enabler" WSPFile="" Scope="Site" Location="" ActiveOrInactive="Active" StringToLookFor="" ElementID="" />
+		<SPFeatureInfo SiteCollection="WA" SubSiteURLCode="_NOT_APPLICABLE_" FeatureName="Montrium Nintex Task Forms" WSPFile="" Scope="Site" Location="" ActiveOrInactive="Active" StringToLookFor="" ElementID="" />
+		<SPFeatureInfo SiteCollection="WA" SubSiteURLCode="_NOT_APPLICABLE_" FeatureName="Montrium Item Contextual Upload" WSPFile="" Scope="Site" Location="" ActiveOrInactive="Active" StringToLookFor="" ElementID="" />
+		<SPFeatureInfo SiteCollection="WA" SubSiteURLCode="_NOT_APPLICABLE_" FeatureName="Montrium Conditional UI Elements" WSPFile="" Scope="Site" Location="" ActiveOrInactive="Active" StringToLookFor="" ElementID="" />
+		<SPFeatureInfo SiteCollection="RC" SubSiteURLCode="_NOT_APPLICABLE_" FeatureName="In Place Records Management" WSPFile="" Scope="Site" Location="" ActiveOrInactive="Active" StringToLookFor="" ElementID="" />
+		<SPFeatureInfo SiteCollection="RC" SubSiteURLCode="_NOT_APPLICABLE_" FeatureName="Reporting" WSPFile="" Scope="Site" Location="" ActiveOrInactive="Active" StringToLookFor="" ElementID="" />
+		<SPFeatureInfo SiteCollection="RC" SubSiteURLCode="_NOT_APPLICABLE_" FeatureName="Content Organizer" WSPFile="" Scope="Web" Location="" ActiveOrInactive="Active" StringToLookFor="" ElementID="" />
+	</SharePointFeaturesArray>
+	<!--SharePoint Features to check-->
+	<SharePointSolutionsArray>
+	</SharePointSolutionsArray>
+	<!--InfoPath Form Services settings to check in Central Admin-->
+	<InfoPathFormServicesArray>
+		<SettingInfo TableName="Allow users to browser-enable form templates" SettingName="AllowUserFormBrowserEnabling" RequiredValue="True" />
+		<SettingInfo TableName="Render form templates that are browser-enabled by users" SettingName="AllowUserFormBrowserRendering" RequiredValue="True" />
+		<SettingInfo TableName="Allow user form templates to use authentication information contained in data connection files" SettingName="AllowUdcAuthenticationForDataConnections" RequiredValue="True" />
+	</InfoPathFormServicesArray>
+	<!--Info Path Forms to check if deployed in Form Templates library-->
+	<InfoPathFormsArray>
+		<FormInfo FormName="Document Activity Log" />
+		<FormInfo FormName="Training Quiz Form" />
+		<FormInfo FormName="Training Request Form" />
+		<FormInfo FormName="Training Session Form" />
+		<FormInfo FormName="CAPA Form" />
+		<FormInfo FormName="Incident Form" />
+		<FormInfo FormName="Change Control Form" />
+	</InfoPathFormsArray>
+	<!--Site Settings to check; SiteCollection is "WA" or "RC"-->
+	<SiteSettingsArray>
+		<SettingInfo SiteCollection="RC" SettingType="Content Organizer Settings" SettingName="Redirect Users to the Drop Off Library" RequiredValue="ENABLED" AllPropertiesValue="client_routerenforcerouting" AllPropertiesType="ENABLED_DISABLED" />
+		<SettingInfo SiteCollection="RC" SettingType="Content Organizer Settings" SettingName="Sending to Another Site" RequiredValue="DISABLED" AllPropertiesValue="_routerenablecrosssiterouting" AllPropertiesType="ENABLED_DISABLED" />
+		<SettingInfo SiteCollection="RC" SettingType="Content Organizer Settings" SettingName="Folder Partitioning" RequiredValue="DISABLED" AllPropertiesValue="_routerautofoldersettings" AllPropertiesType="ENABLED_DISABLED" />
+		<SettingInfo SiteCollection="RC" SettingType="Content Organizer Settings" SettingName="Duplicate Submissions" RequiredValue="UseSharePointVersioning" AllPropertiesValue="_routerversioning" AllPropertiesType="String" />
+		<SettingInfo SiteCollection="RC" SettingType="Content Organizer Settings" SettingName="Preserving Context" RequiredValue="ENABLED" AllPropertiesValue="_routersaveauditlogs" AllPropertiesType="ENABLED_DISABLED" />
+		<SettingInfo SiteCollection="RC" SettingType="Content Organizer Settings" SettingName="E-mail rule managers when submissions do not match a rule" RequiredValue="DISABLED" AllPropertiesValue="_routeremailforproblems" AllPropertiesType="ENABLED_DISABLED" />
+		<SettingInfo SiteCollection="RC" SettingType="Content Organizer Settings" SettingName="E-mail rule managers when content has been left in the Drop Off Library" RequiredValue="DISABLED" AllPropertiesValue="_routeremailforstalecontent" AllPropertiesType="ENABLED_DISABLED" />
+		<!--The below element represents the combine parameters of audit settings that needs to be enabled (7103 means that the below elements are currently enabled):
+		•	Opening or downloading documents, viewing items in lists, or viewing item properties
+		•	Editing Items
+		•	Checking out or checking in items
+		•	Moving or copying items to another location in the site
+		•	Deleting or restoring items
+		•	Editing content types and columns
+		•	Editing users and permissions -->
+		<SettingInfo SiteCollection="RC" SettingType="Site Collection Audit Settings" SettingName="_NOT_APPLICABLE_" RequiredValue="7167" AllPropertiesValue="_NOT_APPLICABLE_" AllPropertiesType="_NOT_APPLICABLE_" />
+		<SettingInfo SiteCollection="RC" SettingType="Record Declaration Settings" SettingName="Record Restrictions" RequiredValue="BlockDelete" AllPropertiesValue="ecm_siterecordrestrictions" AllPropertiesType="String" />
+		<SettingInfo SiteCollection="RC" SettingType="Record Declaration Settings" SettingName="Record Declaration Availability" RequiredValue="Not Available" AllPropertiesValue="ecm_siterecorddeclarationdefault" AllPropertiesType="AVAILABLE_NOTAVAILABLE" />
+		<SettingInfo SiteCollection="RC" SettingType="Record Declaration Settings" SettingName="Declaration of Records" RequiredValue="OnlyPolicy" AllPropertiesValue="ecm_siterecorddeclarationby" AllPropertiesType="String" />
+		<SettingInfo SiteCollection="RC" SettingType="Record Declaration Settings" SettingName="Undeclaration of Records" RequiredValue="OnlyPolicy" AllPropertiesValue="ecm_siterecordundeclarationby" AllPropertiesType="String" />
+	</SiteSettingsArray>
+	<!--Library Settings to check; SiteCollection is "WA" or "RC"-->
+	<LibrarySettingsArray>
+	</LibrarySettingsArray>
+	<!--Workflow Constants to check-->
+	<WorkflowConstantsArray>
+		<WorkflowConstantInfo Name="CDM Version" ConstantType="String" Scope="Site Collection" Sensitive="No" Description="" Value="4.5.5" />
+		<WorkflowConstantInfo Name="TMM Version" ConstantType="String" Scope="Site Collection" Sensitive="No" Description="" Value="4.5.5" />
+		<WorkflowConstantInfo Name="CMM Version" ConstantType="String" Scope="Site Collection" Sensitive="No" Description="" Value="4.5.5" />
+	</WorkflowConstantsArray>
+	<!--Nintex Workflows to check-->
+	<NintexWorkflowArray>
+	</NintexWorkflowArray>
+	<!--Data Connections-->
+	<DataConnectionsArray>
+		<List SubSite="QMW" Items="39" >
+			<Choices Choice="0" Status="Approved"/>
+			<Choices Choice="1" Status="Rejected"/>
+			<Choices Choice="2" Status="Pending"/>
+			<Choices Choice="3" Status="Draft"/>
+			<Choices Choice="4" Status="Scheduled"/>
+			<DataConnection Name="CCM-CheckInFile" ApprovalStatus="Approved"/>
+			<DataConnection Name="CCM-CheckOutFile" ApprovalStatus="Approved"/>
+			<DataConnection Name="CCM-GetRunningWorkflowTasksForListItem" ApprovalStatus="Approved" />
+			<DataConnection Name="CCM-ProcessNintexTask" ApprovalStatus="Approved"/>
+			<DataConnection Name="CCM-SetFileFields" ApprovalStatus="Approved"/>
+			<DataConnection Name="CCM-StartWorkflow" ApprovalStatus="Approved"/>
+			<DataConnection Name="CCM-SubmitChangeControlForm" ApprovalStatus="Approved"/>
+			<DataConnection Name="CDM-GetListItems" ApprovalStatus="Approved"/>
+			<DataConnection Name="CDM-GetRunningWorkflowTasksForListItem" ApprovalStatus="Approved"/>
+			<DataConnection Name="CDM-ProcessNintexTask" ApprovalStatus="Approved"/>
+			<DataConnection Name="CDM-SetFileFields" ApprovalStatus="Approved"/>
+			<DataConnection Name="CDM-SetItemFields" ApprovalStatus="Approved"/>
+			<DataConnection Name="CDM-StartWorkflow" ApprovalStatus="Approved"/>
+			<DataConnection Name="CDM-StartWorkflowOnListItem" ApprovalStatus="Approved"/>
+			<DataConnection Name="CDM-SubmitDALForm" ApprovalStatus="Approved"/>
+			<DataConnection Name="CDM-TerminateWorkflowOnListItem" ApprovalStatus="Approved"/>
+			<DataConnection Name="CMM-CheckInFile" ApprovalStatus="Approved"/>
+			<DataConnection Name="CMM-CheckOutFile" ApprovalStatus="Approved"/>
+			<DataConnection Name="CMM-GetListItems" ApprovalStatus="Approved"/>
+			<DataConnection Name="CMM-GetRunningWorkflowTasksForListItem" ApprovalStatus="Approved"/>
+			<DataConnection Name="CMM-ProcessNintexTask" ApprovalStatus="Approved"/>
+			<DataConnection Name="CMM-SetFileFields" ApprovalStatus="Approved"/>
+			<DataConnection Name="CMM-StartWorkflow" ApprovalStatus="Approved"/>
+			<DataConnection Name="CMM-StartWorkflowOnListItem" ApprovalStatus="Approved"/>
+			<DataConnection Name="CMM-SubmitCAPAForm" ApprovalStatus="Approved"/>
+			<DataConnection Name="CMM-SubmitIncidentForm" ApprovalStatus="Approved"/>
+			<DataConnection Name="IsUserInSPGroup" ApprovalStatus="Approved"/>
+			<DataConnection Name="ROOT-GetListItems" ApprovalStatus="Approved"/>
+			<DataConnection Name="TMM-GetListAbsoluteUrl" ApprovalStatus="Approved"/>
+			<DataConnection Name="TMM-GetListID" ApprovalStatus="Approved"/>
+			<DataConnection Name="TMM-GetListItems" ApprovalStatus="Approved"/>
+			<DataConnection Name="TMM-GetRunningWorkflowTasksForListItem" ApprovalStatus="Approved"/>
+			<DataConnection Name="TMM-ProcessNintexTask" ApprovalStatus="Approved"/>
+			<DataConnection Name="TMM-SetFileFields" ApprovalStatus="Approved"/>
+			<DataConnection Name="TMM-SetItemFields" ApprovalStatus="Approved"/>
+			<DataConnection Name="TMM-StartWorkflow" ApprovalStatus="Approved"/>
+			<DataConnection Name="TMM-SubmitTrainingQuizForm" ApprovalStatus="Approved"/>
+			<DataConnection Name="TMM-SubmitTrainingRequestForm" ApprovalStatus="Approved"/>
+			<DataConnection Name="TMM-SubmitTrainingSessionForm" ApprovalStatus="Approved"/>
+		</List>
+	</DataConnectionsArray>
+	<!--CoSign Features to check-->
+	<CoSignFeatures>
+		<Feature FeatureName="CoSign Connector for SharePoint" Location="QMW" />
+		<Feature FeatureName="CoSign Connector for Workflows" Location="QMW" />
+	</CoSignFeatures>
+	<!--DAL Content Type to check-->
+	<ContentTypeArray>
+	</ContentTypeArray>
+	<!--Attachment Seperator Array-->
+	<AttachmentSeperator>
+	</AttachmentSeperator>
+	<!--CoSign Settings to check-->
+	<CoSignSettingsArray>
+	</CoSignSettingsArray>
+	<!--Secure Store Information to check-->
+	<SecureStoreSettingsArray>
+	</SecureStoreSettingsArray>
+	<!--Help Center settings to check-->
+	<HelpCenterSettingsArray>
+	</HelpCenterSettingsArray>
+</xml>
